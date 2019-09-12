@@ -7,10 +7,10 @@ package javasort;
 public class OptimisedBubbleSort {
     
     /**
-     *
-     * @param a
+     * doOptimisedBubbleSort, does a BubbleSort on a list.
+     * @param a - list
      */
-    public static void doOptimisedBubbleSort(CatalogueItem a[]) {
+    void doOptimisedBubbleSort(CatalogueItem a[]) {
         int lastSwap = a.length-1;
         for(int i=1; i<a.length; i++) {
             boolean is_sorted = true;
@@ -30,7 +30,10 @@ public class OptimisedBubbleSort {
         }
     }
     
-    /* Prints the array */
+    /**
+     * printArray, prints the array.
+     * @param arr - list 
+     */
     void printArray(CatalogueItem arr[])
     {
         int n = arr.length;
